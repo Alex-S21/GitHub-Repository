@@ -1,11 +1,11 @@
 name: "CodeQL Analysis"
-  on:
-    push:
-      branches:
-        - main # Runs the analysis when changes are pushed to the main branch 
-    pull_request:
-      branches:
-        - main # Runs the analysis when a PR is opened to the main branch
+on:
+  push:
+    branches:
+      - main # Runs the analysis when changes are pushed to the main branch 
+  pull_request:
+    branches:
+      - main # Runs the analysis when a PR is opened to the main branch
 jobs:
   analyze:
     name: Analyze code with CodeQL
